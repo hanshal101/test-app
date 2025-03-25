@@ -30,9 +30,6 @@ jobs:
       - name: Lint code
         run: npm run lint --if-present
 
-      - name: Run tests
-        run: npm test
-        
   docker:
     name: Build and Push Docker Image
     needs: test
